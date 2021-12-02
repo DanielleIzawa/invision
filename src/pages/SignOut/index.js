@@ -1,9 +1,28 @@
 import GoogleButton from '../../components/ButtonGoogle'
 import SignInButton from '../../components/ButtonSignIn'
 import Link from '../../components/Link'
-import { LoginContainer, LoginInput, PasswordInput, Title, TitleEmail, LoginInputContainer, PasswordInputContainer, TitleOrContainer, TitleForgotPasswordContainer, TitleForgotPassword, PasswordContainer, EmailContainer, TitleWelcomeContainer, TitleContainer, TitleOr, TitlePassword, TitleWelcome } from './styles';
+import { LoginContainer,
+         LoginInput,
+         PasswordInput,
+         Title,
+         TitleEmail,
+         FullnameInputContainer,
+         FullNameTitle,
+         FullNameContainer,
+         LoginInputContainer,
+         PasswordInputContainer,
+         TitleOrContainer,
+         TitleForgotPasswordContainer,
+         TitleForgotPassword,
+         PasswordContainer,
+         EmailContainer,
+         TitleWelcomeContainer,
+         TitleContainer,
+         TitleOr,
+         TitlePassword,
+         TitleWelcome } from './styles';
 
-const SigIn = () => {
+const SigOut = () => {
   return(
       <LoginContainer>
         <TitleContainer>
@@ -11,8 +30,16 @@ const SigIn = () => {
         </TitleContainer>
 
         <TitleWelcomeContainer>
-          <TitleWelcome> Welcome to Invision </TitleWelcome> 
+          <TitleWelcome> Getting Started </TitleWelcome> 
         </TitleWelcomeContainer>
+
+        <FullNameContainer>
+          <FullNameTitle>Full name</FullNameTitle>
+        </FullNameContainer>
+
+        <FullnameInputContainer>
+          <LoginInput />
+        </FullnameInputContainer>
 
         <EmailContainer>
           <TitleEmail>Users name or Email</TitleEmail>
@@ -46,4 +73,4 @@ const SigIn = () => {
   )
 }
 
-export default SigIn;
+export default SigOut;

@@ -1,6 +1,14 @@
+import { Container } from './styles';
+import Information from './../../components/InformationContainer';
+
+
 const Main = ({children}) => {
   return (
-    <div> {children}</div>
+    <Container> 
+      <Information />
+      {children}
+    </Container>
+    
   )
 }
 

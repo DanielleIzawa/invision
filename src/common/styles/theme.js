@@ -1,10 +1,11 @@
 const Theme = {
   colors:{
-    white: '##FFFFFF 0% 0% no-repeat padding-box;',
+    white: '#FFFFFF',
     gray: '#00000029',
     black: '#000000',
-    gray_text: '#70707',
-    green_text: '#A9C5BA'
+    gray_text: '#707070',
+    green_text: '#A9C5BA',
+    light_gray: '#00000029'
 
   },
   breakpoints: {

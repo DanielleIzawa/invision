@@ -2,7 +2,7 @@ import {Route, Switch} from "react-router-dom"
 import Main from "../pages/home"
 import routes from './routes';
 import SigIn from './../pages/signIn/index';
-import SignOut from './../pages/SignOut/index'
+import SignUp from './../pages/signUp/index';
 
 
 const Routes = () => {
@@ -10,7 +10,7 @@ const Routes = () => {
     <Main>
       <Switch>
         <Route path={routes.signIn} exact component={SigIn}/>
-        <Route path={routes.SignOut} exact component={SignOut}/>
+        <Route path={routes.signUp} exact component={SignUp}/>
       </Switch> 
     </Main>
   )

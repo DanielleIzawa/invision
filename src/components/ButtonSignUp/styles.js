@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import Theme from "../../common/styles/theme"
 
-export const SignInButton = styled.button`
+export const SignUpButton = styled.button`
   display: flex;
   width:50%;
   height: 100%;
@@ -15,13 +15,13 @@ export const SignInButton = styled.button`
   font-size: 9px;
   opacity: 1;
   border:none;
-  margin-top: 15px;
-  margin-left: 110px;
+  margin-top: 20px;
+  margin-left: 115px;
   width:120px;
   height: 30px;
 `
 
-export const SignInButtonContainer = styled.button`
+export const SignUpButtonContainer = styled.button`
   display: flex;
   width:50%;
   height: 100%;

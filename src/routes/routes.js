@@ -1,5 +1,5 @@
 const routes = {
   signIn: '/',
-  signOut: '/signOut'
+  signUp: '/SignUp'
 }
 export default routes

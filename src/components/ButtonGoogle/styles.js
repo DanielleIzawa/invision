@@ -26,10 +26,9 @@ export const GoogleButton = styled.button`
   `
 
 export const GoogleButtonContainer = styled.div`
-  margin-top: 20px;  
+  margin-top: -25px;  
   display: flex;
   width:50%;
   height: 100%;
-  margin-left: 200px;
-  
+  margin-left: 170px;
 `

@@ -1,9 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import styled from "styled-components";
 
 import Theme from "../../common/styles/theme"
 
-export const LinkAccount = styled.div`
+export const LinkTermsContainer = styled(Link)`
+ color:${Theme.colors.green_text};
+`
+
+export const LinkTerms = styled.div`
   display: flex;
   width:25%;
   height: 100%;
@@ -13,41 +17,42 @@ export const LinkAccount = styled.div`
   border-radius: 100px;
   align-items: center;
   justify-content: center;
-  font-size: 9px;
+  font-size: 10px;
   opacity: 1;
   border:none;
-  width:100px;
-  height: 20px;
-  margin-left:93px;
-  margin-top: -46px;
-
-`
+  width:200px;
+  height: 25px;
+  margin-left:245px;
+  margin-top: -75px;
+  gap: 10px;
+  `
 
 export const LinkContainer = styled.div`
   display: flex;
-  width:25%;
+  width:100%;
   height: 100%;
 `
 
-export const TitleNewInvision = styled.h3`
+export const TitleTerms = styled.h3`
   display: flex;
   width:50%;
   height: 100%;
   color: ${Theme.colors.gray_text};
   font-weight: 400;
   font-size: 9px;
-  margin-top: 0px;
+  margin-top: -25px;
+  margin-left:-20px;
   width:300px;
   height: 20px;
 `
 
-export const TitleNewInvisionContainer = styled.div`
+export const TitleTermsContainer = styled.div`
   display: flex;
   width:50%;
   height: 100%;
   margin-left: 240px;
 `
-export const LinkCreate = styled(Link)`
-  color:${Theme.colors.green_text};
-  margin-top: -20px;
+
+export const AndColor = styled.div`
+  color: ${Theme.colors.gray_text};
 `

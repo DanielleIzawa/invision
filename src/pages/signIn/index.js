@@ -1,7 +1,7 @@
 import GoogleButton from '../../components/ButtonGoogle'
 import SignInButton from '../../components/ButtonSignIn'
-import Link from '../../components/Link'
-import { LoginContainer, LoginInput, PasswordInput, Title, TitleEmail, LoginInputContainer, PasswordInputContainer, TitleOrContainer, TitleForgotPasswordContainer, TitleForgotPassword, PasswordContainer, EmailContainer, TitleWelcomeContainer, TitleContainer, TitleOr, TitlePassword, TitleWelcome } from './styles';
+import LinkAccount from '../../components/Link'
+import { EmailContainer, FormContainer, LoginContainer, LoginInput, LoginInputContainer, PasswordContainer, PasswordInput, PasswordInputContainer, Title, TitleContainer, TitleEmail, TitleForgotPassword, TitleForgotPasswordContainer, TitleOr, TitleOrContainer, TitlePassword, TitleWelcome, TitleWelcomeContainer } from './styles';
 
 const SigIn = () => {
   return(
@@ -14,34 +14,41 @@ const SigIn = () => {
           <TitleWelcome> Welcome to Invision </TitleWelcome> 
         </TitleWelcomeContainer>
 
-        <EmailContainer>
-          <TitleEmail>Users name or Email</TitleEmail>
-        </EmailContainer>
-
-        <LoginInputContainer>
-          <LoginInput />
-        </LoginInputContainer>
-
-        <PasswordContainer>
-          <TitlePassword>Password</TitlePassword>
-        </PasswordContainer>
-        
-        <PasswordInputContainer>
-          <PasswordInput />
-        </PasswordInputContainer>
-
-        <TitleForgotPasswordContainer>
-          <TitleForgotPassword>Forgot password?</TitleForgotPassword>
-        </TitleForgotPasswordContainer>
+      <form>
+        <FormContainer>
+          <EmailContainer>
+            <TitleEmail>Users name or Email</TitleEmail>
+          </EmailContainer>
+    
+          <LoginInputContainer>
+            <LoginInput type="email"/>
+          </LoginInputContainer>
+    
+          <PasswordContainer>
+            <TitlePassword>Password</TitlePassword>
+          </PasswordContainer>
+          
+          <PasswordInputContainer>
+            <PasswordInput type="password"/>
+          </PasswordInputContainer>
+    
+          <TitleForgotPasswordContainer>
+            <TitleForgotPassword>Forgot password?</TitleForgotPassword>
+          </TitleForgotPasswordContainer>
+        </FormContainer>
+      </form>
 
         <SignInButton />
         <TitleOrContainer>
-          <TitleOr>Or</TitleOr>
+          <TitleOr>
+            {/* <hr width="40%" /> */}
+            Or
+          </TitleOr>
         </TitleOrContainer>
 
         <GoogleButton />
 
-        <Link />
+        <LinkAccount />
       </LoginContainer>
   )
 }

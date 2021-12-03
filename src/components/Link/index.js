@@ -1,4 +1,5 @@
-import { Link, TitleNewInvision, TitleNewInvisionContainer, LinkContainer } from './styles'
+import routes from './../../routes/routes';
+import { LinkAccount, LinkContainer, LinkCreate, TitleNewInvision, TitleNewInvisionContainer } from './styles'
 
 const LinkCreateAccount = () => {
   return (
@@ -9,9 +10,9 @@ const LinkCreateAccount = () => {
       </TitleNewInvision>
     </TitleNewInvisionContainer>
     <LinkContainer>
-      <Link>
-        Create Account
-      </Link>
+      <LinkAccount to={routes.signUp}>
+        <LinkCreate>Create Account</LinkCreate>
+      </LinkAccount>
     </LinkContainer>
     </>  
   )

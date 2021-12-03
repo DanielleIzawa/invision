@@ -1,7 +1,7 @@
 import GoogleButton from '../../components/ButtonGoogle'
 import SignInButton from '../../components/ButtonSignIn'
 import LinkAccount from '../../components/Link'
-import { EmailContainer, FormContainer, LoginContainer, LoginInput, LoginInputContainer, PasswordContainer, PasswordInput, PasswordInputContainer, Title, TitleContainer, TitleEmail, TitleForgotPassword, TitleForgotPasswordContainer, TitleOr, TitleOrContainer, TitlePassword, TitleWelcome, TitleWelcomeContainer } from './styles';
+import { EmailContainer, FormContainer, LineContainer1, LineContainer2, LoginContainer, LoginInput, LoginInputContainer, PasswordContainer, PasswordInput, PasswordInputContainer, ResponsiveContainer, Title, TitleContainer, TitleEmail, TitleForgotPassword, TitleForgotPasswordContainer, TitleOr, TitlePassword, TitlesContainer, TitleWelcome, TitleWelcomeContainer } from './styles';
 
 const SigIn = () => {
   return(
@@ -21,7 +21,7 @@ const SigIn = () => {
           </EmailContainer>
     
           <LoginInputContainer>
-            <LoginInput type="email"/>
+            <LoginInput type="email" required/>
           </LoginInputContainer>
     
           <PasswordContainer>
@@ -29,26 +29,29 @@ const SigIn = () => {
           </PasswordContainer>
           
           <PasswordInputContainer>
-            <PasswordInput type="password"/>
+            <PasswordInput type="password" required/>
           </PasswordInputContainer>
     
           <TitleForgotPasswordContainer>
             <TitleForgotPassword>Forgot password?</TitleForgotPassword>
           </TitleForgotPasswordContainer>
+        <SignInButton />
         </FormContainer>
       </form>
 
-        <SignInButton />
-        <TitleOrContainer>
+      <ResponsiveContainer>
+        <LineContainer1 />
           <TitleOr>
-            {/* <hr width="40%" /> */}
-            Or
+             Or
           </TitleOr>
-        </TitleOrContainer>
+          <LineContainer2 />
 
         <GoogleButton />
 
         <LinkAccount />
+      </ResponsiveContainer>
+
+        
       </LoginContainer>
   )
 }

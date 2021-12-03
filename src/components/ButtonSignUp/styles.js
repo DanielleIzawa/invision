@@ -15,11 +15,10 @@ export const SignUpButton = styled.button`
   font-size: 9px;
   opacity: 1;
   border:none;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 115px;
-  width:120px;
   height: 30px;
-`
+  `
 
 export const SignUpButtonContainer = styled.button`
   display: flex;
@@ -27,4 +26,5 @@ export const SignUpButtonContainer = styled.button`
   height: 100%;
   border: none;
   background:${Theme.colors.white};
+  width:220px;
 `

@@ -12,11 +12,17 @@ export const LoginContainer = styled.div`
   align-items: center;
 `
 export const TitleContainer = styled.div`
+/*   @font-face {
+    font-family: 'Avenir';
+    src: url('../../common/font/Avenir Heavy.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  } */
   display: flex;
   width:80%;
-  height: 100%;
   margin-top: 50px;
   justify-content: flex-end;
+  //font-family: 'Avenir';
   `
 export const Title = styled.h1`
   color: ${Theme.colors.black};  
@@ -26,11 +32,18 @@ export const Title = styled.h1`
 
 export const TitleWelcomeContainer = styled.div`
   display: flex;
-  height: 100%;
   width:100%;
-  margin-top: 35px;
   justify-content: center;
+  margin-top: 50px;
   `
+export const TitleWelcome = styled.h2`
+  color: ${Theme.colors.gray_text};
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 0px;
+  height:100%;
+`
+
 export const FormContainer = styled.div`
   display: flex;
   height: 100%;
@@ -39,13 +52,7 @@ export const FormContainer = styled.div`
   line-height: 30px;
   align-items: flex-start;
   width: 300px;
-`
-
-
-export const TitleWelcome = styled.h2`
-  color: ${Theme.colors.gray_text};
-  font-weight: 400;
-  font-size: 18px;
+  margin-top: 30px;
 `
 
 export const EmailContainer = styled.div`
@@ -131,27 +138,42 @@ export const PasswordInput = styled.input`
   border-color:${Theme.colors.gray};
 `
 
-export const TitleOrContainer = styled.div`
+export const LineContainer1 = styled.input`
   display: flex;
-  width:50%;
-  height: 100%;
+  border-top: none;
+  border-left:none;
+  border-right:none;
+  width: 130px;
+  border-color:${Theme.colors.gray};
+  margin-top: 35px;
+  margin-right:120px;
+  border-width:1px;
+`
+export const LineContainer2 = styled.input`
+  display: flex;
+  width:40%;
+  border-top: none;
+  border-left:none;
+  border-right:none;
+  width: 130px;
+  border-color:${Theme.colors.gray};
+  margin-top: -30px;
+  margin-right:-200px;
+  border-width:1px;
 `
 export const TitleOr = styled.h3`
   display: flex;
-  width:50%;
-  height: 100%;
   color: ${Theme.colors.gray_text};
-  font-weight: 400;
   font-size: 9px;
-  margin-left: 165px;
-  margin-top: 0px;
+  margin-left: 40px;
+  margin-top: -15px;
 
-/*     h3:before, h3:after {
-    color:white;
-    content:'';
-    flex:1;
-    border-bottom:groove 2px;
-    margin:auto 0.25em;
-    box-shadow: 0 -1px ; */
 `
-
+export const ResponsiveContainer = styled.div`
+  display: flex;
+  height: 100%;
+  width:100%;
+  flex-direction: column;
+  line-height: 30px;
+  align-items: center;
+`

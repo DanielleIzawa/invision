@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import Theme from "../../common/styles/theme"
 
-
 export const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -17,6 +16,23 @@ export const InformationContainer = styled.div`
     width: 450px;
     height: 450px;
     margin-top: 60px;
+  }
+  @media (max-width: 840px) {
+      img, h4{
+        width: 50%;
+        height: 50%;      
+      }
+      h3{
+        width: 50%;
+        height: 50%;  
+      }
+      h4{
+        margin-top: -180px;
+      }
+  }
+
+  @media (max-width:${Theme.breakpoints.small}){
+    display:none;
   }
 `
 

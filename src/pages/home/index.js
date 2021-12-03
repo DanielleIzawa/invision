@@ -1,6 +1,5 @@
-import { Container } from './styles';
 import Information from './../../components/InformationContainer';
-
+import { Container } from './styles';
 
 const Main = ({children}) => {
   return (

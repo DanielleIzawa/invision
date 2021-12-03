@@ -8,4 +8,5 @@ export const Container = styled.div`
   background-color: ${Theme.colors.white};  
   align-items: center;
   justify-content: center;
+
 `

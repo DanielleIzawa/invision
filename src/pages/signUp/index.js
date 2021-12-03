@@ -2,9 +2,9 @@ import GoogleButton from '../../components/ButtonGoogle'
 import SignUpButton from '../../components/ButtonSignUp'
 import TitleLogIn from '../../components/LogIn'
 import TitleTerms from '../../components/TermsAndPrivacy'
-import { EmailContainer, FormOutContainer, FullNameContainer, FullnameInputContainer, FullNameTitle, GettingStartedContainer, LoginContainer, LoginInput, LoginInputContainer, PasswordContainer, PasswordInput, PasswordInputContainer, Title, TitleContainer, TitleEmail, TitleOr, TitleOrContainer, TitlePassword, TitleWelcome } from './styles';
+import { EmailContainer, FormOutContainer, FullNameContainer, FullnameInputContainer, FullNameTitle, GettingStartedContainer, LineContainer1, LineContainer2, LoginContainer, LoginInput, LoginInputContainer, PasswordContainer, PasswordInput, PasswordInputContainer, ResponsiveContainer, Title, TitleContainer, TitleEmail, TitleOr, TitlePassword, TitleWelcome } from './styles';
 
-const SigUp = () => {
+const SignUp = () => {
   return(
     <LoginContainer>
           <TitleContainer>
@@ -22,40 +22,43 @@ const SigUp = () => {
                 </FullNameContainer>
     
                 <FullnameInputContainer>
-                  <LoginInput />
+                  <LoginInput type="text" required/>
                 </FullnameInputContainer>
     
                 <EmailContainer>
-                  <TitleEmail type="text">Users name or Email</TitleEmail>
+                  <TitleEmail >Users name or Email</TitleEmail>
                 </EmailContainer>
     
                 <LoginInputContainer>
-                  <LoginInput type="email"/>
+                  <LoginInput type="email" required/>
                 </LoginInputContainer>
     
                 <PasswordContainer>
-                  <TitlePassword>Password</TitlePassword>
+                  <TitlePassword >Password</TitlePassword>
                 </PasswordContainer>
     
                 <PasswordInputContainer>
-                  <PasswordInput type="password"/>
+                  <PasswordInput type="password" minlength={6} required />
                 </PasswordInputContainer>
+            <SignUpButton />
               </FormOutContainer>
             </form>
 
-            <SignUpButton />
-          <TitleOrContainer>
-            <TitleOr>Or </TitleOr>
-          </TitleOrContainer>
-
-          <GoogleButton />
-
-          <TitleTerms />
-
-          <TitleLogIn />
-
+            <ResponsiveContainer>   
+            <LineContainer1 />
+              <TitleOr>
+                 Or
+              </TitleOr>
+            <LineContainer2 />
+            <GoogleButton />
+    
+            <TitleTerms />
+    
+            <TitleLogIn />
+            </ResponsiveContainer>
+    
           </LoginContainer>
   )
 }
 
-export default SigUp;
+export default SignUp;

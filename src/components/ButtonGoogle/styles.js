@@ -4,7 +4,7 @@ import Theme from "../../common/styles/theme"
 
 export const GoogleButton = styled.button`
   display: flex;
-  width:50%;
+  width:100%;
   height: 100%;
   background: ${Theme.colors.white};  
   color: ${Theme.colors.black};
@@ -26,9 +26,6 @@ export const GoogleButton = styled.button`
   `
 
 export const GoogleButtonContainer = styled.div`
-  margin-top: -25px;  
+  margin-top: 40px;  
   display: flex;
-  width:50%;
-  height: 100%;
-  margin-left: 170px;
 `

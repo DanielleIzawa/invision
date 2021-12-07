@@ -5,10 +5,8 @@ import Theme from "../../common/styles/theme"
 export const LoginContainer = styled.div`
   display: flex;
   width:50%;
-  height: 100%;
   background-color: ${Theme.colors.white};  
   flex-direction: column;
-  line-height: 30px;
   align-items: center;
 `
 export const TitleContainer = styled.div`
@@ -20,7 +18,7 @@ export const TitleContainer = styled.div`
   } */
   display: flex;
   width:80%;
-  margin-top: 50px;
+  margin-top: 0px;
   justify-content: flex-end;
   //font-family: 'Avenir';
   `
@@ -94,7 +92,6 @@ export const TitlePassword = styled.h3`
 export const TitleForgotPassword = styled.h3`
   display: flex;
   width:100%;
-  width: 300px;
   height: 100%;
   color: ${Theme.colors.gray_text};
   font-weight: 400;
@@ -104,8 +101,8 @@ export const TitleForgotPassword = styled.h3`
 
 export const LoginInputContainer = styled.div`
   display: flex;
+  flex-direction:column;
   width:100%;
-  height: 100%;
 `
 export const LoginInput = styled.input`
   background-color: ${Theme.colors.white};  
@@ -118,12 +115,14 @@ export const LoginInput = styled.input`
   padding-left: 20px;
   padding-bottom: 0px;
   border-color:${Theme.colors.gray};
+  &.error{border-color:red;
+  }
 `
 
 export const PasswordInputContainer = styled.div`
   display: flex;
+  flex-direction:column;
   width:100%;
-  height: 100%;
 `
 export const PasswordInput = styled.input`
   background-color: ${Theme.colors.white};  
@@ -136,42 +135,34 @@ export const PasswordInput = styled.input`
   padding-left: 20px;
   padding-bottom: 0px;
   border-color:${Theme.colors.gray};
+  &.error{border-color:red;
+  }
 `
 
-export const LineContainer1 = styled.input`
-  display: flex;
-  border-top: none;
-  border-left:none;
-  border-right:none;
-  width: 130px;
-  border-color:${Theme.colors.gray};
-  margin-top: 35px;
-  margin-right:120px;
-  border-width:1px;
+export const LineWrapper = styled.div`
+  width: 250px;
+  display:flex;
+  align-items:center;
 `
-export const LineContainer2 = styled.input`
+export const LineContainer1 = styled.div`
   display: flex;
-  width:40%;
-  border-top: none;
-  border-left:none;
-  border-right:none;
   width: 130px;
-  border-color:${Theme.colors.gray};
-  margin-top: -30px;
-  margin-right:-200px;
+  border:1px solid ${Theme.colors.gray};
   border-width:1px;
+  flex-grow:1;
+  margin-top: 20px;
 `
+
 export const TitleOr = styled.h3`
   display: flex;
   color: ${Theme.colors.gray_text};
   font-size: 9px;
-  margin-left: 40px;
-  margin-top: -15px;
-
+  margin: 0 10px;
+  margin-top:20px;
 `
+
 export const ResponsiveContainer = styled.div`
   display: flex;
-  height: 100%;
   width:100%;
   flex-direction: column;
   line-height: 30px;

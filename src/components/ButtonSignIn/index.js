@@ -3,7 +3,7 @@ import { SignInButton, SignInButtonContainer } from './styles'
 const SignInButtonRight = () => {
   return (
     <SignInButtonContainer>
-      <SignInButton>Sign In</SignInButton>
+      <SignInButton type="submit">Sign In</SignInButton>
     </SignInButtonContainer>
   )
 }

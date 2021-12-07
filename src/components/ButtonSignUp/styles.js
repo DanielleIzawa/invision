@@ -5,7 +5,6 @@ import Theme from "../../common/styles/theme"
 export const SignUpButton = styled.button`
   display: flex;
   width:50%;
-  height: 100%;
   background: ${Theme.colors.gray_text};  
   color: ${Theme.colors.white};
   font-weight: 700;
@@ -15,16 +14,12 @@ export const SignUpButton = styled.button`
   font-size: 9px;
   opacity: 1;
   border:none;
-  margin-top: 10px;
-  margin-left: 115px;
   height: 30px;
+  width:120px;
   `
 
 export const SignUpButtonContainer = styled.button`
-  display: flex;
-  width:50%;
-  height: 100%;
-  border: none;
-  background:${Theme.colors.white};
-  width:220px;
+  margin-top: 25px;
+  margin-left: 90px;
+  border:none;
 `

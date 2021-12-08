@@ -10,9 +10,9 @@ const LinkCreateAccount = () => {
     </TitleTermsContainer>
     <LinkContainer>
       <LinkTerms>
-      <LinkTermsContainer to=""> Terms of Conditions </LinkTermsContainer>
+      <LinkTermsContainer to = ""> Terms of Conditions </LinkTermsContainer>
         <AndColor> and </AndColor>
-      <LinkTermsContainer to=""> Privacy Policy </LinkTermsContainer>
+      <LinkTermsContainer to = ""> Privacy Policy </LinkTermsContainer>
       </LinkTerms>
     </LinkContainer>
     </>  

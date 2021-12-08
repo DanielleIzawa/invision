@@ -11,7 +11,7 @@ const TermsAndPrivacy = () => {
       </TitleLogInContainer>
       <LinkContainer>
         <LinkLogIn >
-        <LinkLog to="/">Log in</LinkLog>
+        <LinkLog to = "/">Log in</LinkLog>
         </LinkLogIn>
       </LinkContainer>
       </SignUpContainer>

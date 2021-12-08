@@ -11,7 +11,7 @@ const LinkCreateAccount = () => {
     </TitleNewInvisionContainer>
     <LinkContainer>
       <LinkAccount>
-        <LinkCreate  to={routes.signUp}>Create Account</LinkCreate>
+        <LinkCreate to = {routes.signUp}>Create Account</LinkCreate>
       </LinkAccount>
     </LinkContainer>
     </>  

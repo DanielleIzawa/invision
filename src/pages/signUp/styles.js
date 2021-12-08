@@ -12,7 +12,7 @@ export const LoginContainer = styled.div`
 export const TitleContainer = styled.div`
   display: flex;
   width:80%;
-  margin-top: 120px;
+  margin-top: 37px;
   justify-content: flex-end;
   
   `

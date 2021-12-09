@@ -12,7 +12,7 @@ export const LoginContainer = styled.div`
 export const TitleContainer = styled.div`
   display: flex;
   width:80%;
-  margin-top: 37px;
+  margin-top: 30px;
   justify-content: flex-end;
   
   `
@@ -20,6 +20,7 @@ export const Title = styled.h1`
   color: ${Theme.colors.black};  
   font-weight: 700;
   font-size: 22px;
+  position: absolute;
 `
 
 export const GettingStartedContainer = styled.div`
@@ -33,8 +34,7 @@ export const TitleWelcome = styled.h2`
 color: ${Theme.colors.gray_text};
   font-weight: 400;
   font-size: 18px;
-  margin-top: -30px;
-  height:100%;
+  margin-top: -15px;
 `
 
 export const FormOutContainer = styled.div`
@@ -46,7 +46,6 @@ export const FormOutContainer = styled.div`
   align-items: flex-start;
   width: 300px;
   margin-top:60px;
-
 `
 
 export const FullNameContainer = styled.div`
@@ -65,36 +64,57 @@ export const FullNameContainer = styled.div`
 
 export const FullNameTitle = styled.h3`
   display: flex;
-  width:100%;
-  height: 100%;
   color: ${Theme.colors.gray_text};
   font-weight: 400;
   font-size: 9px;
-  
+  margin-top:0px; 
 `
 export const FullnameInputContainer = styled.div`
   display: flex;
   flex-direction:column;
   width:100%;
+  div{
+      font-size:10px;
+    }
 `
 
 export const EmailContainer = styled.div`
-  margin-top: 0px;
   display: flex;
   width:100%;
-  height: 100%;
   `
 
 export const TitleEmail = styled.h3`
   display: flex;
   width:100%;
-  height: 100%;
   color: ${Theme.colors.gray_text};
   font-weight: 400;
   font-size: 9px;
-  margin-top: 5px;
+  margin-top: 0px;
 `
 
+export const LoginInputContainer = styled.div`
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  div{
+      font-size:10px;
+    }
+`
+
+export const LoginInput = styled.input`
+  background-color: ${Theme.colors.white};  
+  font-weight: 700;
+  border-top: none;
+  border-left:none;
+  border-right:none;
+  height: 30px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  border-color:${Theme.colors.gray};
+  &.error{border-color:red;
+  } 
+`
 export const PasswordContainer = styled.div`
   display: flex;
   height: 100%;
@@ -108,32 +128,13 @@ export const TitlePassword = styled.h3`
   
 `
 
-export const LoginInputContainer = styled.div`
-  display: flex;
-  flex-direction:column;
-  width:100%;
-`
-export const LoginInput = styled.input`
-  background-color: ${Theme.colors.white};  
-  font-weight: 700;
-  border-top: none;
-  border-left:none;
-  border-right:none;
-  height: 30px;
-  width: 100%;
-  padding-left: 20px;
-  padding-bottom: 0px;
-  border-color:${Theme.colors.gray};
-  &.error{border-color:red;
-          font-weight: 400;
-  } 
-`
-
 export const PasswordInputContainer = styled.div`
   display: flex;
   flex-direction:column;
   width:100%;
-  
+  div{
+      font-size:10px;
+    }
 `
 export const PasswordInput = styled.input`
   background-color: ${Theme.colors.white};  
@@ -144,10 +145,18 @@ export const PasswordInput = styled.input`
   width: 100%;
   height: 30px;
   padding-left: 20px;
-  margin-top: -10px;;
+  margin-top: -10px;
   border-color:${Theme.colors.gray};
   &.error{border-color:red;
   } 
+`
+
+export const ResponsiveContainer = styled.div`
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  line-height: 30px;
+  align-items: center;
 `
 export const LineWrapper = styled.div`
   width: 250px;
@@ -171,10 +180,3 @@ export const TitleOr = styled.h3`
   margin-top:20px;
 `
 
-export const ResponsiveContainer = styled.div`
-  display: flex;
-  width:100%;
-  flex-direction: column;
-  line-height: 30px;
-  align-items: center;
-`

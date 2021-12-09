@@ -8,8 +8,8 @@ import { EmailContainer, FormContainer, LineContainer1, LineWrapper, LoginContai
 
 const SignInSchema = Yup.object().shape({
   password: Yup.string()
-    .required('*Este campo não pode ser vazio'),
-  email: Yup.string().email('o e-mail está incorreto').required('*Este campo não pode ser vazio'),
+    .required('*Este campo não pode ser vazio.'),
+  email: Yup.string().email('*E-mail está incorreto.').required('*Este campo não pode ser vazio.'),
 });
 
 const SigIn = () => {

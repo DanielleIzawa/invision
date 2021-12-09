@@ -10,22 +10,16 @@ export const LoginContainer = styled.div`
   align-items: center;
 `
 export const TitleContainer = styled.div`
-/*   @font-face {
-    font-family: 'Avenir';
-    src: url('../../common/font/Avenir Heavy.ttf') format(truetype);
-    font-weight: normal;
-    font-style: normal;
-  } */
   display: flex;
   width:80%;
   margin-top: 0px;
   justify-content: flex-end;
-  //font-family: 'Avenir';
   `
 export const Title = styled.h1`
   color: ${Theme.colors.black};  
   font-weight: 700;
   font-size: 22px;
+  position: absolute;
 `
 
 export const TitleWelcomeContainer = styled.div`
@@ -67,42 +61,13 @@ export const TitleEmail = styled.h3`
   font-size: 9px;
 
 `
-
-export const PasswordContainer = styled.div`
-  display: flex;
-  height: 100%;  
-  `
-
-export const TitleForgotPasswordContainer = styled.div`
-  margin-top: 0px;
-  display: flex;
-  width:100%;
-  height: 100%;
-`
-
-export const TitlePassword = styled.h3`
-  background-color: ${Theme.colors.white};  
-  font-weight: 400;
-  font-size: 9px;
-  color: ${Theme.colors.gray_text};
-  width: 50px;
-  height: 20px;
-`
-
-export const TitleForgotPassword = styled.h3`
-  display: flex;
-  width:100%;
-  height: 100%;
-  color: ${Theme.colors.gray_text};
-  font-weight: 400;
-  font-size: 9px;
-  margin-left: 225px;
-`
-
 export const LoginInputContainer = styled.div`
   display: flex;
   flex-direction:column;
   width:100%;
+  div{
+      font-size:10px;
+    }
 `
 export const LoginInput = styled.input`
   background-color: ${Theme.colors.white};  
@@ -116,13 +81,31 @@ export const LoginInput = styled.input`
   padding-bottom: 0px;
   border-color:${Theme.colors.gray};
   &.error{border-color:red;
+          color: ${Theme.colors.gray_text};
+          font-weight: 12px;
   }
+`
+export const PasswordContainer = styled.div`
+  display: flex;
+  height: 100%;  
+  `
+
+export const TitlePassword = styled.h3`
+background-color: ${Theme.colors.white};  
+font-weight: 400;
+font-size: 9px;
+color: ${Theme.colors.gray_text};
+width: 50px;
+height: 20px;
 `
 
 export const PasswordInputContainer = styled.div`
   display: flex;
   flex-direction:column;
   width:100%;
+  div{
+      font-size:10px;
+    }
 `
 export const PasswordInput = styled.input`
   background-color: ${Theme.colors.white};  
@@ -137,6 +120,31 @@ export const PasswordInput = styled.input`
   border-color:${Theme.colors.gray};
   &.error{border-color:red;
   }
+`
+export const TitleForgotPasswordContainer = styled.div`
+  margin-top: 0px;
+  display: flex;
+  width:100%;
+  height: 100%;
+`
+
+
+
+export const TitleForgotPassword = styled.h3`
+  display: flex;
+  width:100%;
+  height: 100%;
+  color: ${Theme.colors.gray_text};
+  font-weight: 400;
+  font-size: 9px;
+  margin-left: 225px;
+`
+export const ResponsiveContainer = styled.div`
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  line-height: 30px;
+  align-items: center;
 `
 
 export const LineWrapper = styled.div`
@@ -161,10 +169,3 @@ export const TitleOr = styled.h3`
   margin-top:20px;
 `
 
-export const ResponsiveContainer = styled.div`
-  display: flex;
-  width:100%;
-  flex-direction: column;
-  line-height: 30px;
-  align-items: center;
-`

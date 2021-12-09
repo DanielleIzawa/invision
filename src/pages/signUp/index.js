@@ -9,11 +9,11 @@ import { EmailContainer, FormOutContainer, FullNameContainer, FullnameInputConta
 
 const SignUpSchema = Yup.object().shape({
   password: Yup.string()
-    .required('*Este campo não pode ser vazio')
-    .min(6, 'A senha não pode ter menos de 6 caracteres'),
-  email: Yup.string().email('o e-mail está incorreto').required('*Este campo não pode ser vazio'),
+    .required('*Este campo não pode ser vazio.')
+    .min(6, '*A senha não pode ter menos de 6 caracteres.'),
+  email: Yup.string().email('*E-mail está incorreto').required('*Este campo não pode ser vazio.'),
   fullName: Yup.string()
-    .required('*Este campo não pode ser vazio'),
+    .required('*Este campo não pode ser vazio.'),
 });
 
 const SignUp = () => {

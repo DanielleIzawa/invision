@@ -19,7 +19,7 @@ import { GoogleButtonContainer } from './styles'
 
 function App() {
   const handleFailure = (result) => {
-    alert(result);
+    console.log(result);
   }
   const handleLogin = (googleData) => {
     console.log(googleData);
